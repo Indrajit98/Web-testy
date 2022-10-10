@@ -6,7 +6,7 @@ const Quiz = () => {
     const quizLoader = useLoaderData()
     const quiz = quizLoader.data
     const {name, questions,total} = quiz
-    console.log(quiz);
+    // console.log(quiz);
     return (
         <div>
             <h3 className='text-center font-bold text-3xl text-slate-600'>Quiz of {name} {total}</h3>
