@@ -3,7 +3,8 @@ import Root from "../components/Root";
 import Home from '../components/Home'
 import ErrorPage from '../components/ErrorPage'
 import About from "../components/About";
-import Quiz from "./Quiz";
+import Quiz from "../components/Quiz";
+
 
 
 export const router = createBrowserRouter([

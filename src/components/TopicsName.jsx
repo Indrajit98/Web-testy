@@ -9,7 +9,9 @@ const TopicsName = ({topicData}) => {
            <div>
            <img className='bg-slate-200 ' src={logo} alt="" />
             <h3 className='font-bold text-slate-600 mt-4'>Topic Name: {name}</h3>
-            <Link to= {`quiz/${id}`} className='bg bg-amber-600 py-2 px-8 mt-18 rounded-md text-white font-bold'>Start Quiz</Link>
+           <div className='mt-4'>
+           <Link to= {`quiz/${id}`} className='bg bg-amber-600 py-2 px-8 mt-18 rounded-md text-white font-bold'>Start Quiz</Link>
+           </div>
            </div>
             
         </div>
