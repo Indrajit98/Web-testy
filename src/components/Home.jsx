@@ -17,7 +17,7 @@ const Home = () => {
           customizable
         </h1>
       </div>
-      <div className="text-center mt-4 sm:text-5xl font-bold text-slate-600">Quiz Select</div>
+      <div className="text-center mt-4 sm:text-5xl font-bold text-amber-600">Quiz Select</div>
       <div className=" grid lg:grid-cols-4 md:grid-cols-2 grid-cols gap-4 mb-24 mt-8  ">
         {topicData.map((topicData) => (
           <TopicsName topicData={topicData} key={topicData.id}></TopicsName>

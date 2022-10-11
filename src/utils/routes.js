@@ -8,6 +8,7 @@ import Blog from "../components/Blog";
 
 
 
+
 export const router = createBrowserRouter([
     {
         path: '/' , element:<Root></Root>,
@@ -18,11 +19,6 @@ export const router = createBrowserRouter([
                 element: <Home></Home>,
                 loader: () => fetch('https://openapi.programming-hero.com/api/quiz')
                
-            },
-            {
-                path: '/home' ,
-                element: <Home></Home>,
-
             },
             {
                 path:'quiz/:id',

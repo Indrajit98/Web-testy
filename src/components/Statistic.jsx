@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import './Style/Statistic.css'
+import "./Style/Statistic.css";
 import {
   CartesianGrid,
   XAxis,
@@ -23,8 +23,9 @@ const Statistic = () => {
   return (
     <div className="container mx-auto">
       <div className="flex mx-auto justify-center mt-8 static">
-        <ResponsiveContainer  className=" static">
-          <AreaChart className='static'
+        <ResponsiveContainer className=" static">
+          <AreaChart
+            className="static"
             data={data}
             margin={{ top: 20, right: 30, left: 0, bottom: 0 }}
           >

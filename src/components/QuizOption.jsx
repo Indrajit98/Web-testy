@@ -10,7 +10,7 @@ const QuizOption = ({ option,quizResult }) => {
       <label className="cursor-pointer" htmlFor={option}>{option}:</label>
     </div>
     
-  );
+  ); 
 };
 
 export default QuizOption;

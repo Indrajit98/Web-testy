@@ -5,19 +5,21 @@ import Swal from 'sweetalert2'
 
 
 const QuizDetails = ({ questions }) => {
-  // console.log(questionsIndex.length)
 
   const { question, options,correctAnswer } = questions;
 
   //  console.log(correctAnswer)
-  // console.log(question); 
+  // console.log(question);
+
   const questionReplace = question.replace('<p>', ' ' )
   const againQuestionReplace = questionReplace.replace('</p>', '')
   console.log(againQuestionReplace);
  
   
   const quizResult = (Ans) =>{
+
     // console.log(Ans);
+
     if(Ans === correctAnswer){
        return toast.success('correct ans',{autoClose:2000})
     }
@@ -26,12 +28,12 @@ const QuizDetails = ({ questions }) => {
     }
    
   }
+  
   const showCorrectAns = ( ) =>{
     console.log(correctAnswer);
     Swal.fire(`Correct Answer`,correctAnswer )
   }
  
-  
 
   return (
     <div className=" my-8 p-4 shadow-lg sm:flex sm:justify-between lg:w-3/4 w-full">
