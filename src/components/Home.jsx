@@ -11,8 +11,8 @@ const Home = () => {
 
   return (
     <section className="container px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-      <div className=" image bg-no-repeat bg-cover flex justify-center items-center ">
-        <h1 className="sm:text-4xl font-bold text-white text-center">
+      <div className=" image bg-no-repeat bg-cover flex justify-center md:items-center items-end  ">
+        <h1 className="md:text-2xl lg:text-4xl text-sm  font-bold text-white text-center pb-6">
           The online quiz maker that's easy to use, <br /> fun and fully
           customizable
         </h1>
