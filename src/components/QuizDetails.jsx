@@ -28,7 +28,7 @@ const QuizDetails = ({ questions }) => {
   
 
   return (
-    <div className=" my-8 p-4 shadow-lg sm:flex sm:justify-between sm:w-1/2">
+    <div className=" my-8 p-4 shadow-lg sm:flex sm:justify-between lg:w-1/2 w-full">
       <div>
         <h2 className="sm:text-xl font-semibold text-slate-600">
           Quiz:{} {question}
