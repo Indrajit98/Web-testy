@@ -12,7 +12,7 @@ const Header = () => {
           title='Smart Home'
           className='inline-flex items-center'
         >
-          <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 '>
+          <span className='ml-2 text-2xl font-bold tracking-wide text-amber-500 '>
           WebTesty
           </span>
         </Link>
@@ -22,7 +22,7 @@ const Header = () => {
               to='/'
               aria-label='Home'
               title='Home'
-              className={({isActive} )=> isActive ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400': 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400' }
+              className={({isActive} )=> isActive ? 'font-medium tracking-wide text-amber-700 transition-colors duration-200 hover:text-deep-purple-accent-400': 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400' }
             >
               Topics
             </NavLink>
@@ -32,7 +32,7 @@ const Header = () => {
               to='/statistics'
               aria-label='Home'
               title='Home'
-              className={({ isActive} )=> isActive ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400': 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400' }
+              className={({ isActive} )=> isActive ? 'font-medium tracking-wide text-amber-700 transition-colors duration-200 hover:text-deep-purple-accent-400': 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400' }
             >
               Statistic
             </NavLink>
@@ -42,21 +42,12 @@ const Header = () => {
               to='/blog'
               aria-label='Home'
               title='Home'
-              className={({ isActive} )=> isActive ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400': 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400' }
+              className={({ isActive} )=> isActive ? 'font-medium tracking-wide text-amber-700 transition-colors duration-200 hover:text-deep-purple-accent-400': 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400' }
             >
               Blog
             </NavLink>
           </li>
-          <li>
-          <NavLink
-              to='/about'
-              aria-label='Home'
-              title='Home'
-              className={({ isActive} )=> isActive ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400': 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400' }
-            >
-              About
-            </NavLink>
-          </li>
+          
         </ul>
         <div className='lg:hidden'>
           <button
@@ -91,15 +82,7 @@ const Header = () => {
                       title='Company'
                       className='inline-flex items-center'
                     >
-                      <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 32 32'
-                        fill='currentColor'
-                        className='flex-shrink-0 w-8 h-8 rounded-full text-gray-900'
-                      >
-                        <path d='M18.266 26.068l7.839-7.854 4.469 4.479c1.859 1.859 1.859 4.875 0 6.734l-1.104 1.104c-1.859 1.865-4.875 1.865-6.734 0zM30.563 2.531l-1.109-1.104c-1.859-1.859-4.875-1.859-6.734 0l-6.719 6.734-6.734-6.734c-1.859-1.859-4.875-1.859-6.734 0l-1.104 1.104c-1.859 1.859-1.859 4.875 0 6.734l6.734 6.734-6.734 6.734c-1.859 1.859-1.859 4.875 0 6.734l1.104 1.104c1.859 1.859 4.875 1.859 6.734 0l21.307-21.307c1.859-1.859 1.859-4.875 0-6.734z'></path>
-                      </svg>
-                      <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
+                      <span className='ml-2 text-xl font-bold tracking-wide text-amber-500 uppercase'>
                         WebTesty
                       </span>
                     </Link>
@@ -124,7 +107,7 @@ const Header = () => {
                   <ul className='space-y-4'>
                     <li>
                       <Link
-                        to='/topic'
+                        to='/'
                         aria-label='Shop'
                         title='Shop'
                         className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
@@ -150,16 +133,6 @@ const Header = () => {
                         className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       >
                         Blog
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to='/about'
-                        aria-label='About Us'
-                        title='About Us'
-                        className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
-                      >
-                        About
                       </Link>
                     </li>
                   </ul>
