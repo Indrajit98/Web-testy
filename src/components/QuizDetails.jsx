@@ -13,7 +13,8 @@ const QuizDetails = ({ questions }) => {
 
   const questionReplace = question.replace('<p>', ' ' )
   const againQuestionReplace = questionReplace.replace('</p>', '')
-  console.log(againQuestionReplace);
+
+  // console.log(againQuestionReplace);
  
   
   const quizResult = (Ans) =>{
@@ -30,7 +31,7 @@ const QuizDetails = ({ questions }) => {
   }
   
   const showCorrectAns = ( ) =>{
-    console.log(correctAnswer);
+    // console.log(correctAnswer);
     Swal.fire(`Correct Answer`,correctAnswer )
   }
  

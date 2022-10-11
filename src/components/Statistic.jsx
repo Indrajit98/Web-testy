@@ -18,7 +18,7 @@ const Statistic = () => {
 
   const [data] = useState(topicData);
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <div className="container mx-auto">

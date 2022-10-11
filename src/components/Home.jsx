@@ -23,6 +23,8 @@ const Home = () => {
           <TopicsName topicData={topicData} key={topicData.id}></TopicsName>
         ))}
       </div>
+
+
     </section>
   );
 };
