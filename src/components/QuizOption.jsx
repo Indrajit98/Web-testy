@@ -1,12 +1,15 @@
 import React from "react";
 
-const QuizOption = ({ option }) => {
-//   console.log(option);
+const QuizOption = ({ option,quizResult }) => {
+ 
   return (
     <div>
-      <input className="mr-2" id="namedInput" type="radio" name="name" />
+      <div onClick={() =>quizResult(option)}>
+      <input className="mr-2" id="namedInput" type="radio" name="name"  />
       <label htmlFor="namedInput">{option}:</label>
+      </div>
     </div>
+    
   );
 };
 
