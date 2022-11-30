@@ -1,4 +1,4 @@
-import React from "react";
+
 import { toast } from "react-toastify";
 import QuizOption from "./QuizOption";
 import Swal from 'sweetalert2'
@@ -22,10 +22,10 @@ const QuizDetails = ({ questions }) => {
     // console.log(Ans);
 
     if(Ans === correctAnswer){
-       return toast.success('correct ans',{autoClose:2000})
+     toast.success('correct ans',{autoClose:2000})  
     }
     else{
-       return toast.error('Ans is not correct',{autoClose:2000})
+     toast.error('Ans is not correct',{autoClose:2000})
     }
    
   }
